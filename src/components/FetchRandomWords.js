@@ -13,6 +13,8 @@ export class FetchRandomWords extends Component {
             wrongWordList: [],
             gameStarted: false,
             errors: false,
+
+            
         }
         this.fetchRandomWords = this.fetchRandomWords.bind(this)
         this.gameLogic = this.gameLogic.bind(this)
