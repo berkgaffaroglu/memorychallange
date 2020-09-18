@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { Table } from 'react-bootstrap'
 export class FetchTop10Players extends Component {
     constructor(props) {
         super(props)
@@ -42,19 +42,38 @@ export class FetchTop10Players extends Component {
         if (Render) {
 
             return (
-                <div>
-                    {projectList.map(function (player, index) {
-                        // Mapping all of the players in top 10.
-                        return (
-                            <div key={index}>{player.id} {player.country} {player.nickname} {player.score}</div>
-                        )
-                    })}
+                <div> 
+                    <Table className="text-white">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Nickname</th>
+                                <th>Country</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            {projectList.map(function (player, index) {
+
+                                // Mapping all of the players in top 10 with using table.
+                                return (
+                                    <tr key={index}>
+                                        <td>{index + 1}</td>
+                                        <td>{player.nickname}</td>
+                                        <td>{player.country}</td>
+                                        <td>{player.score}</td>
+                                    </tr>
+                                )
+                            })}
+                        </tbody>
+                    </Table>
                 </div>
             )
 
         }
         // If the data is taken too much time to load display a spinning animation.
-        else if (Render == false) {
+        else if (Render === false) {
             return (
                 <>Wait</>
             )
