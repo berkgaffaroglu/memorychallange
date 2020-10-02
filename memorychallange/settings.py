@@ -26,7 +26,7 @@ SECRET_KEY = '(_-xyu1rai^moqlg1803%j=)sk-11-5)4u5dzo_h0cnzk&54wn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ["memorychallange.herokuapp.com"]
 
 
 # Application definition
@@ -128,12 +128,10 @@ USE_TZ = True
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000"
+    "http://memorychallange.herokuapp.com/",
 ]
 CORS_ORIGIN_WHITELIST = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000"
+    "http://memorychallange.herokuapp.com/",
 ]
 
 STATIC_URL = '/static/'

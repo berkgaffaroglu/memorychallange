@@ -9,7 +9,7 @@ import {BiLinkExternal} from 'react-icons/bi'
 
 export class App extends Component {
   render() {
-    const websiteUrl = 'http://localhost:8000/'
+    const websiteUrl = 'http://memorychallange.herokuapp.com/'
     return (
       <div className="App">
         <div>
