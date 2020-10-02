@@ -14,4 +14,3 @@ class Player(models.Model):
     nickname = models.CharField(max_length=255)
     score = models.IntegerField()
 
-

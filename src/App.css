@@ -2,23 +2,43 @@
   font-family: 'Barlow';
   src: local('Barlow'), url(./fonts/Barlow-Regular.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'ConcertOne';
+  src: local('ConcertOne'), url(./fonts/ConcertOne-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  src: local('Oswald'), url(./fonts/Oswald.ttf) format('truetype');
+}
 .App {
   text-align: center;
 }
 
 body {
-  font-family:"Barlow" !important;
   background-color:#5d54a4 !important;
 }
 
 .wrapper {
-  min-height:750px !important;
+  max-width: 900px !important;
+  min-height:700px !important;
   border: 14px solid #2A3D66;
   border-radius: 15px;
   background-color: #8c57b5;
+  font-family:"Oswald";
 
 }
 .separator {
   width:200px;
   background-color: white;
+}
+
+.word {
+  font-size:30px;
+}
+.footer {
+  background-color: #212529;
+  padding:3.5px
+}
+.gameHeader {
+  font-family: "ConcertOne";
 }

@@ -4,7 +4,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .serializers import PlayerSerializer
 from .models import Player
-import csv, random, os
+import csv, random, os, json
 
 @api_view(['GET'])
 def apiOverview(request):
@@ -67,4 +67,3 @@ def top10Players(request):
     players = Player.objects.order_by('-score')[:10]
     serializer = PlayerSerializer(players, many=True)
     return Response(serializer.data)
-
