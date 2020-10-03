@@ -26,8 +26,6 @@ SECRET_KEY = '(_-xyu1rai^moqlg1803%j=)sk-11-5)4u5dzo_h0cnzk&54wn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
-
 
 # Application definition
 
@@ -141,3 +139,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'build/static')
 ]
+
+ALLOWED_HOSTS = ['memorychallange.herokuapp.com']
