@@ -125,10 +125,10 @@ USE_TZ = True
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://memorychallange.herokuapp.com/",
+    "http://memorychallange.herokuapp.com",
 ]
 CORS_ORIGIN_WHITELIST = [
-    "http://memorychallange.herokuapp.com/",
+    "http://memorychallange.herokuapp.com",
 ]
 
 STATIC_URL = '/static/'
@@ -139,4 +139,4 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'build/static')
 ]
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ['.herokuapp.com', 'memorychallange.herokuapp.com']
