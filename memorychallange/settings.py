@@ -141,4 +141,4 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-ALLOWED_HOSTS = ['.herokuapp.com', 'memorychallange.herokuapp.com']
+ALLOWED_HOSTS = ['.herokuapp.com', 'memorychallange.herokuapp.com', 'localhost']
