@@ -45,7 +45,7 @@ export class Game extends Component {
     handleNextLevel() {
 
         const { level } = this.state
-        var finalLevel = 5
+        var finalLevel = 3
         // If current level is equal to finalLevel+1 that means player finished the finalLevel.
         if (level == finalLevel + 1) { this.setState({ levelStarted: false, final: true }); return -1 }
         else {
