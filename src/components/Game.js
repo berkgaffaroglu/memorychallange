@@ -159,7 +159,7 @@ export class Game extends Component {
             )
             var endQuestions = (
                 <div className="mt-5">
-                    <h3 className="text-white">What word didn't shown?</h3>
+                    <h3 className="text-white">What word wasn't shown?</h3>
                     <div>
                         {wordList.map((word, index) => {
                             return (<button className="btn btn-lg btn-info text-white mr-2 mt-3" key={index} onClick={(e) => this.handleCorrectAnswers(e)}>

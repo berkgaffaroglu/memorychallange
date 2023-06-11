@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '(_-xyu1rai^moqlg1803%j=)sk-11-5)4u5dzo_h0cnzk&54wn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 # Application definition
@@ -125,10 +125,10 @@ USE_TZ = True
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://memorychallange.herokuapp.com",
+    "http://memorychallange.herokuapp.com",'http://localhost:3000', 'https://memorychallange.pythonanywhere.com'
 ]
 CORS_ORIGIN_WHITELIST = [
-    "http://memorychallange.herokuapp.com",
+    "http://memorychallange.herokuapp.com",'http://localhost:3000', 'https://memorychallange.pythonanywhere.com'
 ]
 
 STATIC_URL = '/static/'
@@ -141,4 +141,4 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-ALLOWED_HOSTS = ['.herokuapp.com', 'memorychallange.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['.herokuapp.com', 'memorychallange.herokuapp.com', 'localhost','127.0.0.1', 'memorychallange.pythonanywhere.com']
